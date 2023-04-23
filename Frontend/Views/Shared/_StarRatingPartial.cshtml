@@ -1,0 +1,14 @@
+﻿@*@model double
+
+@{
+    var random = new Random();
+    var solidStars = random.Next(0, 6);
+}
+
+<div class="star-rating">
+    @foreach (var star in Enumerable.Range(0, 5))
+    {
+        <i class="fa fa-star @(star < solidStars ? "fa-solid" : "fa-regular")"></i>
+    }
+</div>
+*@

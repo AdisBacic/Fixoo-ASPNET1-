@@ -1,0 +1,33 @@
+﻿@model Product
+
+
+<div class="container mb-5">
+    <div class="image-section">
+        <img src="https://images-ext-1.discordapp.net/external/sbIdhgvHck4V1JbV0VEncJVVVSEpDz5UolB2cX5gGnw/http/via.placeholder.com/640x360" alt="" />
+        <div class="menu">
+            <div class="icons">
+                <button class="link"><i class="fa-regular fa-code-compare"></i></button>
+                <button class="link"><i class="fa-regular fa-heart"></i></button>
+                <button class="link"><i class="fa-regular fa-bag-shopping"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="star-rating">
+        @for (int i = 1; i <= 5; i++)
+        {
+            var solid = i <= Model.StarRating ? "fa-solid" : "fa-regular";
+            <i class="fa fa-star @solid"></i>
+        }
+    </div>
+
+    <div class="body-section">
+        <div class="category">Category: @Model.Genre</div>
+        <div class="name">Tag: @Model.Tag.ToString()</div>
+        <div class="name">Product: @Model.Name</div>
+        <div class="name">Price: @Model.Price.ToString("0")kr</div>
+        <div class="@Model.Price"></div>
+        <div>"@Model.Description"</div>
+    </div>
+</div>
+

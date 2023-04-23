@@ -1,0 +1,34 @@
+﻿
+@model MessageFormModel
+
+<div class="container mb-5">
+    <div class="col-md-10 mx-auto col-lg-5">
+        <form method="post" action="/Contacts/Send">
+            <div asp-validation-summary="ModelOnly"></div>
+
+            <h2>Contact us!</h2>
+            <div class="form-floating mb-3">
+                <input asp-for="Email" class="form-control" />
+                <label for="floatingInput" asp-for="Email" class="form-label"></label>
+                <span asp-validation-for="Email" class="text-danger"></span>
+
+            </div>
+            <div class="form-floating mb-3">
+                <textarea asp-for="Message" class="form-control" style="height: 250px;"></textarea>
+                <label for="floatingInput" asp-for="Message" class="form-label"></label>
+                <span asp-validation-for="Message" class="text-danger"></span>
+
+            </div>
+            <button class="w-100 btn btn-lg btn-primary btn-theme" type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+

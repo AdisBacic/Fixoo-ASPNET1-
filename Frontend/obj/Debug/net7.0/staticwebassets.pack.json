@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\temp\\Desktop\\Assignment_ASP_NET_1\\Frontend\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\temp\\Desktop\\Assignment_ASP_NET_1\\Frontend\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\temp\\Desktop\\Assignment_ASP_NET_1\\Frontend\\wwwroot\\images\\office-style.png",
+      "PackagePath": "staticwebassets\\images\\office-style.png"
+    },
+    {
+      "Id": "C:\\Users\\temp\\Desktop\\Assignment_ASP_NET_1\\Frontend\\wwwroot\\images\\party-style.png",
+      "PackagePath": "staticwebassets\\images\\party-style.png"
+    },
+    {
+      "Id": "C:\\Users\\temp\\Desktop\\Assignment_ASP_NET_1\\Frontend\\wwwroot\\images\\showcase-img.png",
+      "PackagePath": "staticwebassets\\images\\showcase-img.png"
+    },
+    {
+      "Id": "C:\\Users\\temp\\Desktop\\Assignment_ASP_NET_1\\Frontend\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Frontend.props",
+      "PackagePath": "build\\Frontend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Frontend.props",
+      "PackagePath": "buildMultiTargeting\\Frontend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Frontend.props",
+      "PackagePath": "buildTransitive\\Frontend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

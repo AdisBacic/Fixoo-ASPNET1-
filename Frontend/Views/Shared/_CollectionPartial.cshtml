@@ -1,0 +1,142 @@
+﻿
+@model HomeViewModel
+
+    <section class="collection-grid">
+        <div class="container">
+            <div class="title">Featured Products</div>
+            <div class="item-collection">
+
+            @foreach (var item in Model.Featured.Take(4))
+            {
+
+                //Stockbild:@*https://images-ext-1.discordapp.net/external/sbIdhgvHck4V1JbV0VEncJVVVSEpDz5UolB2cX5gGnw/http/via.placeholder.com/640x360*@
+
+                <div class="item">
+                    <div class="image-section">
+                        <img src="@item.ImageUrl" alt="" />
+                        <div class="menu">
+                            <div class="icons">
+                                <button class="link"><i class="fa-regular fa-code-compare"></i></button>
+                                <button class="link"><i class="fa-regular fa-heart"></i></button>
+                                <button class="link"><i class="fa-regular fa-bag-shopping"></i></button>
+                            </div>
+
+                            <a asp-controller="Products" asp-action="Detail" asp-route-id="@item.Id" type="button" class="btn-theme">Quick View</a>
+
+                        </div>
+                    </div>
+
+                    <div class="body-section">
+                        <div class="category">Coats</div>
+                        <div class="name">@item.Name</div>
+
+                        <div class="star-rating">
+                            @for (int i = 1; i <= 5; i++)
+                            {
+                                var solid = i <= item.StarRating ? "fa-solid" : "fa-regular";
+                                <i class="fa fa-star @solid"></i>
+                            }
+                        </div>
+                        <div class="price">@item.Price.ToString("0")kr</div>
+                    </div>
+                </div>
+
+            }
+             
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="collection-grid">
+        <div class="container">
+            <div class="title">New Products</div>
+            <div class="item-collection">
+            @foreach (var item in Model.New.Take(4))
+            {
+
+                <div class="item">
+                    <div class="image-section">
+                        <img src="@item.ImageUrl" alt="" />
+                        <div class="menu">
+                            <div class="icons">
+                                <button class="link"><i class="fa-regular fa-code-compare"></i></button>
+                                <button class="link"><i class="fa-regular fa-heart"></i></button>
+                                <button class="link"><i class="fa-regular fa-bag-shopping"></i></button>
+                            </div>
+
+                            <a asp-controller="Products" asp-action="Detail" asp-route-id="@item.Id" type="button" class="btn-theme">Quick View</a>
+                            
+                        </div>
+                    </div>
+
+                    <div class="body-section">
+                        <div class="category">Coats</div>
+                        <div class="name">@item.Name</div>
+
+                        <div class="star-rating">
+                            @for (int i = 1; i <= 5; i++)
+                            {
+                                var solid = i <= item.StarRating ? "fa-solid" : "fa-regular";
+                                <i class="fa fa-star @solid"></i>
+                            }
+                        </div>
+                        <div class="price">@item.Price.ToString("0")kr</div>
+                    </div>
+                </div>
+            }
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="collection-grid">
+        <div class="container">
+            <div class="title">Popular Products</div>
+            <div class="item-collection">
+            @foreach (var item in Model.Popular.Take(4))
+            {
+                <div class="item">
+                    <div class="image-section">
+                        <img src="@item.ImageUrl" alt="" />
+                        <div class="menu">
+                            <div class="icons">
+                                <button class="link"><i class="fa-regular fa-code-compare"></i></button>
+                                <button class="link"><i class="fa-regular fa-heart"></i></button>
+                                <button class="link"><i class="fa-regular fa-bag-shopping"></i></button>
+                            </div>
+
+                            <a asp-controller="Products" asp-action="Detail" asp-route-id="@item.Id" type="button" class="btn-theme">Quick View</a>
+
+
+                        </div>
+                    </div>
+
+                    <div class="body-section">
+                        <div class="category">Coats</div>
+                        <div class="name">@item.Name</div>
+                        <div class="star-rating">
+                            @for (int i = 1; i <= 5; i++)
+                            {
+                                var solid = i <= item.StarRating ? "fa-solid" : "fa-regular";
+                                <i class="fa fa-star @solid"></i>
+                            }
+                        </div>
+
+                        <div class="price">@item.Price.ToString("0")kr</div>
+                    </div>
+                </div>
+
+            }
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
