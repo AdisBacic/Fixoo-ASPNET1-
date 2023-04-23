@@ -10,7 +10,7 @@ namespace Frontend.Models.Forms
         [DisplayName("E-postadress")]
         public string Email { get; set; } = null!;
 
-        [Required(ErrorMessage = "Du måste ange ett Meddelande!")]
+        [Required(ErrorMessage = "Empty message is not allowed!")]
         [MinLength(2, ErrorMessage = "Meddelandet måste minst innehålla 2 tecken")]
         [DisplayName("Message")]
         public string Message { get; set; } = null!;
